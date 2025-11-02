@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mechanics - AutoHeads.help</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="AutoHeads Logo">
+      <h1>AutoHeads.help</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="workshops.html">Workshops</a>
+      <a href="#" id="profileBtn">Profile</a>
+    </nav>
+  </header>
+
+  <!-- Main Section -->
+  <main class="mechanics-page">
+    <h2>Professional Mechanics</h2>
+
+    <div class="mechanic-list">
+      <div class="mechanic-card">
+        <img src="assets/mechanic1.jpg" alt="Mechanic Photo">
+        <div class="info">
+          <h3>Ramesh Shrestha</h3>
+          <p>Engine & Transmission Expert</p>
+          <p><small>Baneshwor, Kathmandu</small></p>
+          <button class="message-btn" data-name="Ramesh Shrestha">Message</button>
+        </div>
+      </div>
+
+      <div class="mechanic-card">
+        <img src="assets/mechanic2.jpg" alt="Mechanic Photo">
+        <div class="info">
+          <h3>Dipesh Thapa</h3>
+          <p>Suspension & Brake Specialist</p>
+          <p><small>Jawalakhel, Lalitpur</small></p>
+          <button class="message-btn" data-name="Dipesh Thapa">Message</button>
+        </div>
+      </div>
+
+      <div class="mechanic-card">
+        <img src="assets/mechanic3.jpg" alt="Mechanic Photo">
+        <div class="info">
+          <h3>Prabin Tamang</h3>
+          <p>Electrical & ECU Diagnostics</p>
+          <p><small>Gongabu, Kathmandu</small></p>
+          <button class="message-btn" data-name="Prabin Tamang">Message</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Chat Popup -->
+  <div class="chat-popup" id="chatPopup">
+    <div class="chat-box">
+      <div class="chat-header">
+        <span id="chatName">Chat</span>
+        <span class="close-chat">&times;</span>
+      </div>
+      <div class="chat-body" id="chatBody">
+        <div class="msg mechanic">Hello, how can I help you?</div>
+      </div>
+      <div class="chat-input">
+        <input type="text" id="chatText" placeholder="Type a message...">
+        <button id="sendBtn">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoHeads Workshops</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">AutoHeads</div>
+        <a href="https://www.instagram.com/autoheads.np?igsh=bDV5c2s3cDY1d3Bm" target="_blank" class="instagram-link">Instagram</a>
+    </header>
+
+    <!-- Page Title -->
+    <h1>Nearby Workshops</h1>
+
+    <!-- Workshop Profiles -->
+    <div class="profiles-container">
+        <!-- Sample Workshop Profile 1 -->
+        <div class="profile-card">
+            <div class="profile-info">
+                <h2>Speedy Garage</h2>
+                <p>Location: Kathmandu</p>
+                <p>Specialty: Engine & Transmission</p>
+                <button class="message-btn" onclick="openMessage(this)">Message Workshop</button>
+            </div>
+        </div>
+
+        <!-- Sample Workshop Profile 2 -->
+        <div class="profile-card">
+            <div class="profile-info">
+                <h2>Rapid Auto</h2>
+                <p>Location: Lalitpur</p>
+                <p>Specialty: Brake & Suspension</p>
+                <button class="message-btn" onclick="openMessage(this)">Message Workshop</button>
+            </div>
+        </div>
+
+        <!-- Sample Workshop Profile 3 -->
+        <div class="profile-card">
+            <div class="profile-info">
+                <h2>Turbo Garage</h2>
+                <p>Location: Bhaktapur</p>
+                <p>Specialty: Diesel Vehicles</p>
+                <button class="message-btn" onclick="openMessage(this)">Message Workshop</button>
+            </div>
+        </div>
+
+        <!-- Sample Workshop Profile 4 -->
+        <div class="profile-card">
+            <div class="profile-info">
+                <h2>MotorX</h2>
+                <p>Location: Pokhara</p>
+                <p>Specialty: SUV & Sedans</p>
+                <button class="message-btn" onclick="openMessage(this)">Message Workshop</button>
+            </div>
+        </div>
+
+        <!-- Sample Workshop Profile 5 -->
+        <div class="profile-card">
+            <div class="profile-info">
+                <h2>AutoFix Pro</h2>
+                <p>Location: Chitwan</p>
+                <p>Specialty: Complete Diagnostics</p>
+                <button class="message-btn" onclick="openMessage(this)">Message Workshop</button>
+            </div>
+        </div>
+
+        <!-- Sample Workshop Profile 6 -->
+        <div class="profile-card">
+            <div class="profile-info">
+                <h2>GearHeads</h2>
+                <p>Location: Dharan</p>
+                <p>Specialty: Engine Tuning</p>
+                <button class="message-btn" onclick="openMessage(this)">Message Workshop</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Message Popup -->
+    <div id="message-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closeMessage()">&times;</span>
+            <h2>Messaging</h2>
+            <div class="chat-box" id="chat-box">
+                <div class="chat-message sent">Hi! I want to inquire about your services.</div>
+            </div>
+            <input type="text" id="message-input" placeholder="Type a message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
